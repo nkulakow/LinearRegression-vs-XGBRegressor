@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Prediction service</h1>
+    {% if message %}
+        <h2>{{ message }}</h2>
+    {% endif %}
+    <h3>Upload a .json file with data about the artist</h3>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="sessions">Enter sessions file: </label>
+        <input type="file" name="sessions">
+        <br>
+        <label for="tracks">Enter tracks file: </label>
+        <input type="file" name="tracks">
+        <br>
+        <label for="month">Enter month nr: </label>
+        <input type="number" id="month" name="month" step="1" />
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

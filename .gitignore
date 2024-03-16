@@ -1,0 +1,8 @@
+data/IUM23Z_Zad_06_01_v3/sessions.jsonl
+src/microservice/uploads/*.jsonl
+*/__pycache__/*
+data/sessions.jsonl
+data/tracks.jsonl
+AB-results-complex.csv
+AB-results-simple.csv
+src/microservice/venv/*
